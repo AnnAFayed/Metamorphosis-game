@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - SO
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: fg
     uniqueID: 2170656297
+    locked: 0
+  - name: player
+    uniqueID: 241284843
     locked: 0
