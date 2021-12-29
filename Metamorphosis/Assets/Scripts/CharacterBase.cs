@@ -9,15 +9,19 @@ public class CharacterBase : ScriptableObject
     [SerializeField] string name;
 
     [SerializeField] Sprite frontSprite;
+    [SerializeField] Sprite backSprite;
 
     [SerializeField] SuperpowerTypes type;
-
+    [SerializeField] SuperpowerTypes type2;
+    [SerializeField] SuperpowerTypes type3;
+    [SerializeField] SuperpowerTypes type4;
+    [SerializeField] SuperpowerTypes type5;
 
     [SerializeField] int maxHealth;
     [SerializeField] int speed;
     [SerializeField] int level;
 
-
+    [SerializeField] List<LearnableAttack> learnableAttacks;
     //properties
     public string Name   
     {
@@ -26,6 +30,10 @@ public class CharacterBase : ScriptableObject
     public Sprite FrontSprite
     {
         get { return frontSprite; }
+    }
+    public Sprite BackSprite
+    {
+        get { return backSprite; }
     }
     public SuperpowerTypes Type
     {
@@ -43,10 +51,26 @@ public class CharacterBase : ScriptableObject
     {
         get { return level; }
     }
+    public List<LearnableAttack> LearnableAttacks
+    {
+        get { return learnableAttacks; }
+    }
+
+}
+
+[System.Serializable]
+public class LearnableAttack
+{
+    [SerializeField] MoveBase moveBase;
+    public MoveBase Base
+    {
+        get { return moveBase; }
+    }
 }
 
 public enum SuperpowerTypes
 {
+    None,
  Laser_Vision,
  Fists_of_Steel,
  Invisibility,
@@ -62,8 +86,7 @@ public enum SuperpowerTypes
  Acid,
  Earth_Manipulation,
  Demonic,
- witch,
- wizard,
+ Magic,
  Speed,
  Force_Field,
  Mimicking,

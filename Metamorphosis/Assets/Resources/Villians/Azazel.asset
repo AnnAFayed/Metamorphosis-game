@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d001dec8d9edfb541b6954212ba8d522, type: 3}
+  m_Name: Azazel
+  m_EditorClassIdentifier: 
+  name: Azazel
+  frontSprite: {fileID: -7903377049739132213, guid: 3747ae19f4ce47946a7379199e05e7d2, type: 3}
+  backSprite: {fileID: 0}
+  type: 19
+  type2: 0
+  type3: 0
+  type4: 0
+  type5: 0
+  maxHealth: 80
+  speed: 25
+  level: 0
+  learnableAttacks:
+  - moveBase: {fileID: 11400000, guid: 00c2c18e22ddb4a46bc2fd85bfdd4651, type: 2}
+  - moveBase: {fileID: 11400000, guid: 75ff8a013888d2b47b05401b3aedae07, type: 2}
+  - moveBase: {fileID: 11400000, guid: 52e588d4773b6784a9523c24e5458f17, type: 2}
