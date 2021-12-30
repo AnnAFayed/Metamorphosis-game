@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour,ISavable
 
     public float moveSpeed;
     public LayerMask solidObjectLayer;
+    public LayerMask interactableLayer; //for interacting with NPC
 
     private bool isMoving;
     private Vector2 input;
@@ -41,6 +42,9 @@ public class PlayerController : MonoBehaviour,ISavable
             }
         }
         animator.SetBool("isMoving", isMoving);
+        //for interacting with NPC
+        if (Input.GetKeyDown(KeyCode.Z))
+            Interact();
     }
     IEnumerator Move(Vector3 targetPos)
     {
@@ -73,6 +77,18 @@ public class PlayerController : MonoBehaviour,ISavable
         var position = (float[])state;
         transform.position = new Vector3(position[0], position[1]);
     }
+    //for interacting with NPC
+    void Interact()
+    {
+        var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var interactPos = transform.position + facingDir;
 
-   
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
+        }
+    }
+
 }
