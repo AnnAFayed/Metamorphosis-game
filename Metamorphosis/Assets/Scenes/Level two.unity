@@ -157,6 +157,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetZoom: 3
   ZoomSpeed: 3
+--- !u!114 &679654775 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1478302555134236398, guid: d278d11d764ac7d42bfd47ab476846e9, type: 3}
+  m_PrefabInstance: {fileID: 1478302555077116514}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &882665812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1478302553348480266, guid: d278d11d764ac7d42bfd47ab476846e9, type: 3}
+  m_PrefabInstance: {fileID: 1478302555077116514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!81 &1259339323
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8903,6 +8919,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6552592540067746696, guid: b9f56f24affff7143933780492c895ea, type: 3}
+      propertyPath: interactableLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 6552592540067746697, guid: b9f56f24affff7143933780492c895ea, type: 3}
       propertyPath: m_Name
       value: Fplayer (1)_14
@@ -9101,7 +9121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478302553528863946, guid: d278d11d764ac7d42bfd47ab476846e9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1478302553528863950, guid: d278d11d764ac7d42bfd47ab476846e9, type: 3}
       propertyPath: m_Pivot.x
@@ -9199,6 +9219,26 @@ PrefabInstance:
     - target: {fileID: 1774678055825850248, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_Name
       value: npc 2_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850248, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850249, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850250, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850251, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850251, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: Help us from the villians
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_RootOrder
@@ -9362,6 +9402,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8181132702357456163, guid: 52c5087f7132c6843b7a0aecbfcb1f39, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 882665812}
+    - target: {fileID: 8181132702357456163, guid: 52c5087f7132c6843b7a0aecbfcb1f39, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 679654775}
     - target: {fileID: 8181132702357456172, guid: 52c5087f7132c6843b7a0aecbfcb1f39, type: 3}
       propertyPath: inventoryUI
       value: 
