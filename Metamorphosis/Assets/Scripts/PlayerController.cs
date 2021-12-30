@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour,ISavable
         }
         animator.SetBool("isMoving", isMoving);
         //for interacting with NPC
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Space))
             Interact();
     }
     IEnumerator Move(Vector3 targetPos)
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour,ISavable
     }
     private bool IsWalkable (Vector3 targetPos)
     {
-        if( Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectLayer) != null)
+        if( Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectLayer | interactableLayer) != null)
             {
             return false;
         }
