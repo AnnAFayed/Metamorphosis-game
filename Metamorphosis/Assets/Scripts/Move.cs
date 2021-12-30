@@ -8,9 +8,9 @@ public class Move
     public int Mana { get; set; }
 
 
-    public Move(MoveBase cBase, int mana)
+    public Move(MoveBase cBase)
     {
         Base = cBase;
-        Mana = mana;
+        Mana = cBase.Mana;
     }
 }

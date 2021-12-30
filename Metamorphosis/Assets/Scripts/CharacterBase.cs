@@ -62,9 +62,14 @@ public class CharacterBase : ScriptableObject
 public class LearnableAttack
 {
     [SerializeField] MoveBase moveBase;
+    [SerializeField] int level;
     public MoveBase Base
     {
         get { return moveBase; }
+    }
+    public int Level
+    {
+        get { return level; }
     }
 }
 

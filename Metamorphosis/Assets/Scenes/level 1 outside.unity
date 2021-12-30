@@ -17203,7 +17203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &279617718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17478,7 +17478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &519420029
 AudioListener:
   m_ObjectHideFlags: 0
@@ -19919,10 +19919,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1809915708}
-  lettersPerSecond: 30
+  lettersPerSecond: 500
   actionSelector: {fileID: 279617717}
   moveSelector: {fileID: 747172245}
   moveDetails: {fileID: 135246940}
+  highlightedColor: {r: 0, g: 0.60020995, b: 1, a: 1}
   actionTexts:
   - {fileID: 1088263770}
   - {fileID: 436684343}

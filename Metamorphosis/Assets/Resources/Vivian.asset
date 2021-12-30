@@ -21,16 +21,26 @@ MonoBehaviour:
   type4: 4
   type5: 5
   maxHealth: 75
-  speed: 0
+  speed: 10
   level: 5
   learnableAttacks:
   - moveBase: {fileID: 11400000, guid: 25b15cb81f2065046b09fc6f8bebd781, type: 2}
+    level: 5
   - moveBase: {fileID: 11400000, guid: 16f920958479f6e479f0b5c23999f3c6, type: 2}
+    level: 6
   - moveBase: {fileID: 11400000, guid: 6d287764498579a448b7c5534d42e7f9, type: 2}
+    level: 10
   - moveBase: {fileID: 11400000, guid: d4947c8f27a82ad4886217b028d52ac4, type: 2}
+    level: 12
   - moveBase: {fileID: 11400000, guid: d97e4aaf1f1a1ba4fa54ed55a3d76c3f, type: 2}
+    level: 17
   - moveBase: {fileID: 11400000, guid: 8d04894046f4a8d47a10d7e5e0df9871, type: 2}
+    level: 17
   - moveBase: {fileID: 11400000, guid: 508c47701a6160143b9632b873b53cea, type: 2}
+    level: 20
   - moveBase: {fileID: 11400000, guid: 2db7451871023b848b6efdeb820c96f0, type: 2}
+    level: 22
   - moveBase: {fileID: 11400000, guid: 1dd78fee4a9aeab44aca85ff271e7ddf, type: 2}
+    level: 28
   - moveBase: {fileID: 11400000, guid: d8e6843b4faa37444b7cfeb659ef69da, type: 2}
+    level: 28

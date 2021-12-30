@@ -10,6 +10,7 @@ public class MoveBase : ScriptableObject
     [SerializeField] SuperpowerTypes type;
     [SerializeField] int damage;
     [SerializeField] int mana;
+    [SerializeField] int level;
 
     public string Name
     {
@@ -26,5 +27,9 @@ public class MoveBase : ScriptableObject
     public int Mana
     {
         get { return mana; }
+    }
+    public int Level
+    {
+        get { return level; }
     }
 }
