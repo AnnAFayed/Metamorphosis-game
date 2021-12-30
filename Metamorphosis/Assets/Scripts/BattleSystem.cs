@@ -49,6 +49,45 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnableActionSelector(false);
         dialogBox.EnableMoveSelector(true);
     }
+
+    IEnumerator PerformPlayerMove()
+    {
+        state = BattleState.Busy;
+        var move = playerUnit.Character.Moves[currentMove];
+        yield return dialogBox.TypeDialog($"{ playerUnit.Character.Base.Name}used {move.Base.Name}");
+        yield return new WaitForSeconds(1f);
+
+        bool isDefeated = enemyUnit.Character.TakeDamage(move, playerUnit.Character);
+        yield return enemyHud.UpdateHealth();
+        if (isDefeated)
+        {
+            yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name} was defeated");
+
+        }
+        else
+        {
+            StartCoroutine(EnemyMove());
+        }
+    }
+    IEnumerator EnemyMove()
+    {
+        state = BattleState.EnemyMove;
+        var move = playerUnit.Character.GetRandomMove();
+        yield return dialogBox.TypeDialog($"{ enemyUnit.Character.Base.Name}used {move.Base.Name}");
+        yield return new WaitForSeconds(1f);
+
+        bool isDefeated = playerUnit.Character.TakeDamage(move, enemyUnit.Character);
+        yield return playerHud.UpdateHealth();
+        if (isDefeated)
+        {
+            yield return dialogBox.TypeDialog($"{ playerUnit.Character.Base.Name} was defeated");
+
+        }
+        else
+        {
+            PlayerAction();
+        }
+    }
     private void Update()
     {
         if(state== BattleState.PlayerAction)
@@ -110,5 +149,14 @@ public class BattleSystem : MonoBehaviour
                 currentMove -= 2;
         }
         dialogBox.UpdateMoveSelection(currentMove, playerUnit.Character.Moves[currentMove]);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            dialogBox.EnableMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            StartCoroutine(PerformPlayerMove());
+        }
+
+    
     }
 }

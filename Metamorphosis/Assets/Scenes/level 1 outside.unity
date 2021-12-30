@@ -19697,7 +19697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1809915708}
-  lettersPerSecond: 500
+  lettersPerSecond: 30
   actionSelector: {fileID: 279617717}
   moveSelector: {fileID: 747172245}
   moveDetails: {fileID: 135246940}
