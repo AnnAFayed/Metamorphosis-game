@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class PlayerController : MonoBehaviour,ISavable
 {
 
     public float moveSpeed;
     public LayerMask solidObjectLayer;
     public LayerMask interactableLayer; //for interacting with NPC
+    
 
     private bool isMoving;
     private Vector2 input;
@@ -40,10 +41,12 @@ public class PlayerController : MonoBehaviour,ISavable
                 if (IsWalkable(targetPos))
                 StartCoroutine(Move(targetPos));
             }
+
+
         }
         animator.SetBool("isMoving", isMoving);
         //for interacting with NPC
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
             Interact();
     }
     IEnumerator Move(Vector3 targetPos)
@@ -57,11 +60,10 @@ public class PlayerController : MonoBehaviour,ISavable
         transform.position = targetPos;
         isMoving = false;
     }
-    private bool IsWalkable (Vector3 targetPos)
+    private bool IsWalkable(Vector3 targetPos)
     {
-        if( Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectLayer | interactableLayer) != null)
-            {
-            return false;
+        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectLayer | interactableLayer) != null)//for nbc
+        { return false;
         }
         return true;
     }
@@ -90,5 +92,12 @@ public class PlayerController : MonoBehaviour,ISavable
             collider.GetComponent<Interactable>()?.Interact();
         }
     }
+
+    public event Action Onupdate;
+    public void CharaUpdated()
+    {
+        Onupdate?.Invoke();
+    }
+
 
 }

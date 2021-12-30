@@ -9238,7 +9238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850251, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: dialog.lines.Array.data[0]
-      value: Help us from the villians
+      value: Help us from the villians....
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_RootOrder
