@@ -249,7 +249,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1774678055825850248, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_Name
-      value: npc 2_18
+      value: Healerr
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850248, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850249, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850251, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774678055825850251, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: You look tired, please take some rest.
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850252, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_Sprite
@@ -261,19 +277,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5897093
+      value: 3.6244047
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.620612
+      value: 3.3931684
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8562
+      value: -5.2505
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1724
+      value: 3.0431
       objectReference: {fileID: 0}
     - target: {fileID: 1774678055825850253, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -309,6 +325,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+--- !u!1 &314421214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1774678055825850248, guid: bd11cef672a0648419211d8d17a2e2b3, type: 3}
+  m_PrefabInstance: {fileID: 314421213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &314421215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314421214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85eceb025b19ff409603fac24790e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &857359333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 466373501461628015, guid: b61391042403b334db50651a604d69c9, type: 3}
+  m_PrefabInstance: {fileID: 1176331375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &927564139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1315,11 +1353,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b61391042403b334db50651a604d69c9, type: 3}
---- !u!1 &1247828479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 466373503304982187, guid: b61391042403b334db50651a604d69c9, type: 3}
-  m_PrefabInstance: {fileID: 1176331375}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1434082186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65fb7a348c0f07a42a02ebe15099a592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 1247828479}
+  health: {fileID: 857359333}
 --- !u!4 &1725952249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6552592540067746694, guid: b9f56f24affff7143933780492c895ea, type: 3}

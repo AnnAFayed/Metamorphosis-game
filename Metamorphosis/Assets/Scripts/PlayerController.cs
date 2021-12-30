@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class PlayerController : MonoBehaviour,ISavable
 {
 
@@ -90,5 +90,14 @@ public class PlayerController : MonoBehaviour,ISavable
             collider.GetComponent<Interactable>()?.Interact();
         }
     }
+
+    public event Action Onupdate;
+    public void CharaUpdated()
+    {
+        Onupdate?.Invoke();
+    }
+
+
+
 
 }

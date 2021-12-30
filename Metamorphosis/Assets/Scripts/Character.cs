@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Character
 {
@@ -26,9 +27,23 @@ public class Character
         }
     }
 
+   //healing
+    public int Heal()
+    {
+        Health = MaxHealth;
+        return Health;
+    }
+    public event Action Onupdate;
+    public void CharaUpdated()
+    {
+        Onupdate?.Invoke();
+    }
+
+
+
     //public int MaxHealth
     //{
-      //  get { return Mathf.FloorToInt((Base.Speed*Level)/100f)+10; }
+    //  get { return Mathf.FloorToInt((Base.Speed*Level)/100f)+10; }
     //}
 
     public bool TakeDamage(Move move, Character attacker)
