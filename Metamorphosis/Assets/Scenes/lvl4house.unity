@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 1577891264}
   - component: {fileID: 1577891263}
   - component: {fileID: 1577891262}
+  - component: {fileID: 1577891266}
   m_Layer: 6
   m_Name: House
   m_TagString: Untagged
@@ -413,17 +414,46 @@ EdgeCollider2D:
   - {x: -2.4142098, y: 0.57222795}
   - {x: -2.41603, y: -0.8601718}
   - {x: -1.9616803, y: -0.8793856}
-  - {x: -1.9045571, y: -1.0774572}
-  - {x: -1.8966525, y: -2.0286741}
-  - {x: -1.9320284, y: -2.179608}
-  - {x: 1.9431388, y: -2.1678479}
-  - {x: 1.9183439, y: -0.9685113}
-  - {x: 2.3572354, y: -0.94106114}
-  - {x: 2.3698285, y: 0.68861777}
-  - {x: 1.9502671, y: 0.6312966}
-  - {x: 2.0115585, y: 1.7197175}
-  - {x: 2.4104745, y: 1.7851028}
-  - {x: 2.3476877, y: 2.205524}
+  - {x: -1.9202431, y: -2.1597862}
+  - {x: -1.8544608, y: -2.0928493}
+  - {x: -1.8000009, y: -2.118296}
+  - {x: -1.7396171, y: -2.1587944}
+  - {x: -1.4613096, y: -2.1117306}
+  - {x: -1.1681067, y: -2.146974}
+  - {x: -1.122036, y: -2.1195242}
+  - {x: -0.959797, y: -2.135952}
+  - {x: -0.9678315, y: -2.1184502}
+  - {x: -0.77559996, y: -2.1710806}
+  - {x: -0.73209345, y: -2.1618128}
+  - {x: -0.5704107, y: -2.0968003}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1577891266
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577891259}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.7378545, y: -2.1613185}
+  - {x: 1.938221, y: -2.1313043}
+  - {x: 1.9308217, y: -0.93495715}
+  - {x: 2.3906758, y: -0.9012383}
+  - {x: 2.3972502, y: 0.5263009}
+  - {x: 1.9060831, y: 0.60343146}
+  - {x: 1.9774176, y: 1.7652293}
+  - {x: 2.3811736, y: 2.1224923}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
