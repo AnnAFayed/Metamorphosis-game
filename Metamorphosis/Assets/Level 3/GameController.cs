@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     //[SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
     GameState state;
-    //[SerializeField]InventoryUI inventoryUI;   //for inventory
+   [SerializeField]InventoryUI inventoryUI;   //for inventory
    // private void Awake()
     //{
         //ConditionsDB.Init();
@@ -71,9 +71,8 @@ public class GameController : MonoBehaviour
         {
             DialogManger.Instance.HandleUpdate();
         }
-        //inventory
-        /*
-        else if(state = GameState.Bag)
+
+      if(state == GameState.Bag)
         {
             Action onBack = () =>
               {
@@ -82,9 +81,9 @@ public class GameController : MonoBehaviour
               };
             inventoryUI.HandleUpdate(onBack);
         }
-        */
+        
     }
-    /*  //FOR INVENTORY
+      //FOR INVENTORY
     void OnMenuSelected(int selectedItem)
     {
         if (selectedItem == 1)
@@ -93,5 +92,5 @@ public class GameController : MonoBehaviour
             state = GameState.Bag;
         }
     }
-    */
+    
 }
